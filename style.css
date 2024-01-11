@@ -7,7 +7,9 @@
 }
 
 body {
-  /* TODO */
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+  background: rgb(63,177,251);
+  background: radial-gradient(circle, rgba(63,177,251,0.6166841736694677) 0%, rgba(70,92,252,0.8155637254901961) 100%);
 }
 
 input {
@@ -43,4 +45,13 @@ ul li:hover {
 
 input {
    /* TODO */
+}
+
+img {
+  width: 500px;
+  height: 400px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
 }
