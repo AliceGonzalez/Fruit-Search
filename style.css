@@ -2,15 +2,10 @@
   box-sizing: border-box; 
 }
 
-h1 {
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  font-size: 60px;
-  color: white;
-  text-shadow: 5px 5px 10px #203a92fa;
+input:focus {
+  background-color: white;
 }
-:focus {
 
-}
 img {
   width: 300px;
   height: 250px;
@@ -19,86 +14,65 @@ img {
   right: 0;
   margin: 20px;
 }
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
-  background: rgb(63,177,251);
-  background: radial-gradient(circle, rgba(63,177,251,0.6166841736694677) 0%, rgba(70,92,252,0.8155637254901961) 100%);
+  background: linear-gradient(90deg, rgba(63,177,251,0.6166841736694677) 0%, rgba(70,92,252,0.8155637254901961) 100%);
 }
 
 input {
- color: hwb(340 5% 23%);
- font-size: 30px;
- text-align: center;
- font-family: Arial, Helvetica, sans-serif;
+  border-bottom: 3px solid #3a62e4d3;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  font-size: 20px;
 }
 
 .search-container {
   position: relative;
-  text-align: center;
-  margin-bottom: 0;
+  width: 200px;
 }
+
 .search-container input,
 .search-container .suggestions {
-  font-family: Arial, Helvetica, sans-serif;
-  border-color: rgba(43, 113, 243, 0.807);
-  margin: 0;
-  text-align: center;
+  background-color: hwb(207 63% 3%);
 }
+
 .search-container input {
- background-color: white;
- width: 400px;
+  color: hsl(1, 67%, 53%);
 }
+
 .search-container .suggestions {
-  display: flexbox;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  font-size: 20px;
-  overflow-y: auto;
-  max-height: 200px;
-  width: 100%;
-  scrollbar-width: thin;
-  scrollbar-color: transparent transparent;
-  margin-top: 0;
- 
-}
-
-.suggestions::-webkit-scrollbar {
-  width: 12px; 
-}
-
-.suggestions::-webkit-scrollbar-thumb {
-  background-color: transparent;
+  position: absolute;
+  width: 247px;
+  max-height: 400px;
+  overflow-y: hidden;
 }
 
 ul {
-  background-color: rgba(240, 248, 255, 0.401);
-  list-style: none;
-  padding: none;
-  width: 100%;
-  justify-content: center;
-  text-align: center;
+  padding: 0;
+  margin: 0;
+  background-color: hwb(207 63% 3%);
+  font-size: 20px;
 }
-ul.has-suggestions {
-  text-align: center;
 
+.has-suggestions {
+  font-weight: 600;
 }
+
 ul li {
-  cursor: pointer;
-  text-align: center;
-  align-items: center;
-  display: flex;
-  width: 100%;
+   list-style: none;
 }
+
 ul li:hover {
-  background-color: #3d7ff05d;
+  background-color: hsla(1, 67%, 53%, 0.331);
 }
 
 input {
-  width: 600px;
+  height: 40px;
 }
 
